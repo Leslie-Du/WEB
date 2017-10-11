@@ -1,0 +1,21 @@
+HTML标签
+
+标题<h1>This is a heading</h1>
+
+段落<p>This is a paragraph.</p>
+
+链接<a href="http://www.baidu.com">百度</a>
+
+图像<img src="风景.jpg" width="104" height="142" />
+
+水平线<hr />
+
+换行<br />
+
+注释<!-- This is a comment -->
+
+样式style<p style="color:#F00">这是一个段落</p>
+
+
+
+

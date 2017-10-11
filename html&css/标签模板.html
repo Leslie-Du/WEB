@@ -1,0 +1,141 @@
+<!DOCTYPE html>           <!-- 文档类型定义 -->
+<html> <!-- 开始标记 -->  <!-- html 标记 标签 -->
+<head lang="en"> <!-- 括号内的属性和属性值 -->
+    <meta charset="utf-8">      <!-- 字符编码集UTF-8识别多种国家语言 --> 
+    <!-- 只有开头没有结尾的为单标记-->
+    <title></title> 
+    <!-- 标题，网页的标签页 -->
+</head> 
+<body>                        <!-- 网页的正文 -->
+    <h1>一级标题</h1>
+    <h2>二级标题</h2>
+    <h3>三级标题</h3>
+    <p>表现文章段落</p>
+
+    <!-- 无序列表 -->
+    <ul>
+        <li>无序列表</li>
+        <li>无序列表</li>
+        <li>无序列表</li>
+        <li>无序列表</li>
+        ......                  
+        <!-- 可有多个列表项 -->
+    </ul>
+    <!-- 有序列表 -->
+    <ol>    
+        <li>有序列表</li>
+        <li>有序列表</li>
+        <li>有序列表</li>
+        <li>有序列表</li>
+        ......
+    </ol>
+    <!-- 定义列表 -->
+    <dl>
+        <dt>定义列表</dt>
+        <dt>定义列表</dt>
+        <dt>定义列表</dt>
+        ......
+    </dl>
+    <!-- 预格式文本 -->
+    <pre>
+        代码怎么敲的格式，页面就会   怎么样   展现。
+    </pre>
+    <!-- 引用  -->
+    <blockquote>大段的引用</blockquote>
+    <q>小段的引用</q>
+    <p>哭疼<span style="color:red">   老鼠</span>，换牙</p> 
+    <a href="#" style="text-decoration: none;color: blue" target="_blank">超文本链接</a> <!-- target属性可新开一个页面跳转 -->
+    <img src="images/345876_03.png" >  
+         <!-- src=后面跟路径，"../"代表退出当前文件夹,alt表示图片没加载出来时，有提示作用，提示开发人员图片内容 -->
+         <div>划分区块用</div>
+         <strong>加粗并且强调</strong>
+         <b>加粗</b>
+         <em>可以让文字倾斜，em的语义更加强烈</em>
+         <i>也可以文字倾斜&nbsp;&nbsp;但是语义</br>不强调</i> <!-- &nbsp;代表空格，</br>代表换行 <hr/>为下划线-->
+         <sup>&copy</sup>
+            上标                                  
+         <sup>&reg</sup>
+         <sub>&gt</sub>
+            下标
+         <sub>&lt</sub>
+        </body>
+    </html> <!-- 结束标记||闭合标记 -->  
+   <abbr title="what dose the fuck">WTF</abbr>             <!-- 缩写 -->
+<figure>
+    <!-- 填写主要内容 -->
+    <figcaption></figcaption>                           <!-- 填写与内容相关的内容 -->
+</figure>
+
+<!-- 音频播放 -->
+<audio src="" controls="controls" autoplay></audio>             <!-- 属性和属性值相同时可以省略属性值 -->
+<!-- 视频播放支持MP4，vebm,ogg --> 
+<video src="" controls="" autoplay="true" loop >                <!-- controls(控件)，autoplay（自动播放）,loop(循环) -->
+
+</video>
+<!-- 表格 -->
+<table border="1">
+    <tr>                <!-- tr代表行-->       
+        <td colspan="1">1</td>      <!-- td代表列 -->
+        <td rowspan="1">2</td>      <!-- colspan横向合并，rowspan纵向合并 -->
+        <td>3</td>
+    </tr>
+    <tr>
+        <td>4</td>
+        <td>5</td>
+        <td>6</td>      
+    </tr>
+    <tr>
+        <td>7</td>
+        <td>8</td>
+        <td>9</td>      
+    </tr>       
+</table>
+<form action="" method="">
+    <!-- 输入框 -->        <!-- placeholder可以设置提示信息 -->
+    <input type="text" name="" placeholder="">
+    <!-- 密码框 -->     <!-- maxlength可以规定输入的最大长度 -->
+    <input type="password" name="" maxlength="">
+    <!-- 按钮    -->
+    <input type="button" name="" value="设置属性" >
+    <!-- 重置 -->
+    <input type="reset" name="">
+    <!-- 提交按钮 -->
+    <input type="submit" name="">
+    <!-- 按钮也可以发起提交 -->
+    <button>新的按钮</button>
+    <!-- 单选按钮 当name相同时就可以单选 -->
+    <label for="man">男</label>
+    <input type="radio" name="sex" id="man">
+    <label for="woman">女</label>
+    <input type="radio" name="sex" id="woman">
+    <!-- 多选 -->                 <!-- checked可默认选择 -->
+    <input type="checkbox" name="" checked>
+    <input type="checkbox" name="" >
+    <input type="checkbox" name="" >
+    <!-- 下拉框 -->
+    <select>
+        <option>成都</option>
+        <option>上海</option>
+        <option>北京</option>
+    </select>
+    <!-- 多行文本框 -->
+    <textarea>
+
+    </textarea>
+</form>
+<address>地址</address>
+<small>小号文字</small>
+<p><mark>文字高亮</mark>
+<p>表示<time>时间</time></p>
+<!-- 把一个网页内联到网页上 -->
+<iframe src=""></iframe>
+<!-- 导航 -->
+<nav></nav>
+<article>
+    表示一段独立的文章内容。例如一篇完整的论坛帖子，一则网站新闻，一篇博客，一个用户评论等
+    article可以嵌套，则内层的article对外层有隶属关系，例如，一个博客文章，可以用article显示，
+    然后一些评论可以用article的形式嵌套其中。
+</article>
+<section>
+    定义文档的节，区段，比如章节、页眉、页脚、或文档中的其他部分
+</section>
