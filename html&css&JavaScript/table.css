@@ -1,0 +1,8 @@
+@charset "utf-8";
+/* CSS Document */
+
+
+table,table td{
+	border:#3CF solid 2px;
+	width:400px;
+}
