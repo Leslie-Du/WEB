@@ -59,9 +59,11 @@
 		}
 		
 		var p = new Person("旺财",20);
-		for(x in p){
-			println(x);	
+		/*
+		for(x in p){//遍历出对象的属性和方法
+			println(x+":"+p[x]);	
 		}
+		*/
 		
 		
 		//alert(p.name);
@@ -69,7 +71,7 @@
 		//alert(p.getName());
 		
 		//---------------------------------
-
+		//直接使用{}定义属性和值的键值对方式。键值间通过:连接，键键间用逗号隔开
 		var pp = {
 			//定义一些成员。键值对
 			"name":"小明","age":38,
@@ -79,12 +81,50 @@
 		}
 		//对象调用成员有两种方式：对象.属性   对象["属性名"]
 		//alert(pp.age+"---"+pp["age"]);
-		//salert(pp.getName());
+		//alert(pp.getName());
+		
+		var oMap = {
+			8:"小强",3:"旺财",7:"小明"
+		}	
+		
+		//var val1 = oMap[8];
+		//alert("val1:"+val1);
+		
+		var val2 = get(7);
+		//alert("val2:"+val2);
+		
+		function get(key){
+			return oMap[key];	
+		}
+		
+		
+		//变量名的规范
+		var bX = true;
+		var iN = 3;
+		var sT = "abc";
 		
 		
 		
+//-------------------------------------
+
+    	var myMap = {
+			//names:["lisi1","lisi2","lisi3"],nums:[1,5,9]
+			names:[{name1:"zhangsan"},{myname:"hahaha"}]	
+		}
 		
-    
+		//alert(myMap.names[1]);//lisi2
+		alert(myMap.names[0].name1);
+	
+		
+	
+	
+	
+	
+	
+	
+	
+	
+	
     </script> 
 </body>
 </html>
