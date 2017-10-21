@@ -1,0 +1,105 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>无标题文档</title>
+</head>
+
+<body>
+	<script type="text/javascript" src="out.js"></script>
+	<script type="text/javascript">
+    	/*
+			js自定义对象。
+			
+			如果想要自定义对象，应该先对对象进行描述。
+			js是基于对象的，不是面向对象的，不具备直接描述事物的能力。
+			我们还想按照面向对象的思想编写js。
+			就要先描述，在js中，可以用函数来模拟面向对象的中的描述。
+			
+		*/
+		
+		/*
+		//用js来描述人
+		function Person(){//相当于构造器。
+			//alert("person run");	
+		}
+		
+		//通过描述进行对象的建立，new
+		var p = new Person();
+		//动态给p对象添加属性，直接使用 p.属性名 即可。
+		p.name = "zhangsan";
+		p.age = 29;
+		//如果定义的p对象的属性赋值为一个函数，即是给p对象添加一个方法。
+		p.show = function(){
+			alert("show:"+this.name+"::"+this.age);	
+		}
+		//p.show();
+		
+		var obj = new Object();
+		obj.name = "god father";
+		obj.age = 2017;
+		
+		//alert(obj.name+":"+obj.age);
+		*/
+		//-------------------------------------
+		
+	
+		function Person(name,age){
+			//在给Person对象添加了两个属性。
+			this.name = name;
+			this.age = age;
+			
+			this.setName = function(name){
+				this.name = name;	
+			}
+			this.getName = function(){
+				return this.name;	
+			}
+				
+		}
+		
+		var p = new Person("旺财",20);
+		for(x in p){
+			println(x);	
+		}
+		
+		
+		//alert(p.name);
+		p.setName("小强");
+		//alert(p.getName());
+		
+		//---------------------------------
+
+		var pp = {
+			//定义一些成员。键值对
+			"name":"小明","age":38,
+			"getName":function(){
+				return this.name;	
+			}
+		}
+		//对象调用成员有两种方式：对象.属性   对象["属性名"]
+		//alert(pp.age+"---"+pp["age"]);
+		//salert(pp.getName());
+		
+		
+		
+		
+    
+    </script> 
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

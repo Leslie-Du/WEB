@@ -1,0 +1,83 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>无标题文档</title>
+</head>
+
+<body>
+	<script type="text/javascript" src="out.js"></script>
+	<script type="text/javascript">
+    	/*
+			演示Global的全局方法
+		*/
+		//返回字符串转换得到的整数
+    	//println(parseInt("123")+1);//124
+		
+		var val = parseInt("12abc");//val = 12
+		
+		println("val="+isNaN(val));//通过isNaN来判断结果是否非法
+		
+		//将指定进制格式的字符串转成十进制
+		var num = parseInt("110",2);
+		println(num);//6
+		
+		//Number对象
+		//将十进制转成其他进制，使用Number对象完成。
+		var num3 = new Number(6);
+		println("num3="+num3.toString(2));
+		
+		var num4 = 60;
+		println("num4="+num4.toString(16));
+		
+		/*
+			js中的特有语句 for in
+			对对象进行遍历
+			
+			格式:
+			for(变量 in 对象){
+					
+			}
+		*/
+		var arr = [32,80,65];
+		for(i in arr){
+			println("i="+arr[i]);
+		}
+		println("<hr />");
+		var numObj = "abc";
+		for(x in numObj){
+			println(x);	
+		}
+		
+		
+    </script>
+
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

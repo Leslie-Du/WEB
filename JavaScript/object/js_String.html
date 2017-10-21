@@ -8,6 +8,7 @@
 <body>
 	<script type="text/javascript" src="out.js"></script>
     <script type="text/javascript" src="stringtool.js"></script>
+ q
 	<script type="text/javascript">
     	/*
 			演示String对象：
@@ -56,9 +57,9 @@
 		
 		var s = "     ab c    ";
     	
-		alert("-"+trim(s)+"-");
-		
+		//alert("-"+trim(s)+"-");
 		*/
+		
 		
 		
 		
@@ -75,16 +76,16 @@
 			就可以使用原型属性来完成。
 	
 		*/
-		//给String对象的原型中添加一个功能。注意：给对象添加新功能直接使用 对象.新内容 即可。
+		//给String对象的原型中添加一个功能。注意：给对象添加新功能直接使用 对象原型.新内容 即可。
 		//添加属性
 		//String.prototype.len = 199;//给String的原型对象中添加一个属性，名为len，值为199。
-		//println("haha".len);
+		//println("haha".len);//199
 		
 		//添加行为
 		//String.prototype.trim = trim; 
 		
 		
-		alert("-"+"   ab c de     ".trim()+"-");
+		alert("-"+"             b c de     ".trim()+"-");
 		
 		
 		

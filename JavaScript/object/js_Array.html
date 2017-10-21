@@ -1,0 +1,102 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>无标题文档</title>
+</head>
+
+<body>
+	<script type="text/javascript" src="out.js"></script>
+	<script type="text/javascript">
+    	/*
+			演示数组。
+		*/
+		
+		var arr = ["nbc","haha","cba","aaa","abc"];
+		
+		var arr2 = ["qq","xiaoqiang",70];
+		
+		//println(arr);
+		//println(arr2);
+		//数组连接,
+		//println(arr.concat("dumingyuan",arr2));//连接了arr,"dumingyaun",arr2
+    
+		//join方法将数组元素以字符串的形式输出，默认用","连接。
+		//println(arr.join("+"));
+		//println(arr.myJoin(arr,"-"));
+		
+		//模拟join实现原理。
+		function myJoin(arr,separator){
+				
+			var str = "";
+			for(var x=0; x<arr.length; x++){
+				if(x!=arr.length-1)	{
+					str += arr[x]+separator;	
+				}
+				else{
+					str += arr[x];	
+				}
+			}
+			return str;
+		}
+		
+		//pop方法：移除数组中的最后一个元素，并返回该元素
+		///println(arr.pop());
+		//println(arr);
+		
+		//shift方法：移除数组中的第一个元素，并返回该元素
+		//println(arr.shift());
+		//println(arr);
+		
+		//reverse方法：反转数组中的元素
+		//println(arr.reverse());
+		
+		//slice方法：返回数组的一段
+		//println(arr.slice(2,3));//包含头不包含尾
+		
+		//sort方法：
+		//arr.sort();
+		
+		//splise方法：从指定位置开始删除（并返回）指定个数的元素，如果有必要，可以在删除的位置添加新元素
+		println(arr);
+		println(arr.splice(1,2,"xixi"));
+		println(arr);
+		
+		
+		
+		
+		
+		
+    </script>
+
+
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
